@@ -1,0 +1,21 @@
+const settings = {
+    defaultNumberOfBoids: 50,
+    minNumberOfBoids: 1,
+    maxNumberOfBoids: 100,
+    defaultVisualRange: 100,
+    minVisualRange: 1,
+    maxVisualRange: 500,
+    defaultSpeedLimit: 50,
+    minSpeedLimit: 1,
+    maxSpeedLimit: 100,
+    defaultCohesion: 100,
+    minCohesion: 1,
+    maxCohesion: 500,
+    defaultSeparation: 20,
+    minSeparation: 1,
+    maxSeparation: 100,
+    defaultAlignment: 15,
+    minAlignment: 1,
+    maxAlignment: 50,
+}
+export default settings
