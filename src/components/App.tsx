@@ -13,7 +13,7 @@ import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 
-const github: string = "https://github.com/nickmpaz"
+const github: string = "https://github.com/nickmpaz/react-boids"
 
 function App() {
   const [numberOfBoids, setNumberOfBoids] = useState(settings.defaultNumberOfBoids);
