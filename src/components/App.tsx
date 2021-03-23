@@ -9,8 +9,11 @@ import Boids from "components/Boids";
 import Explanation from "components/Explanation";
 import { useState } from 'react';
 import settings from "settings"
+import IconButton from '@material-ui/core/IconButton';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 
+const github: string = "https://github.com/nickmpaz"
 
 function App() {
   const [numberOfBoids, setNumberOfBoids] = useState(settings.defaultNumberOfBoids);
@@ -21,12 +24,21 @@ function App() {
   const [cohesion, setCohesion] = useState(settings.defaultCohesion);
 
   return (
-    <Box height="100vh" display="flex" flexDirection="column">
+    <Box height="100vh" style={{
+      backgroundColor: "#EEEEEE"
+    }} display="flex" flexDirection="column" >
       <AppBar position="fixed">
         <Toolbar variant="dense">
+          <Box width="100%" display="flex" alignItems="center" justifyContent="space-between">
           <Typography variant="h6">
-            Boids
+              Boids in React
           </Typography>
+            {/* <IconButton aria-label="upload picture" component="span"> */}
+            <a href={github}>
+              <GitHubIcon href={github} style={{ color: "white" }} fontSize="large" />
+            </a>
+            {/* </IconButton> */}
+          </Box>
         </Toolbar>
       </AppBar>
       <Toolbar variant="dense"></Toolbar>
