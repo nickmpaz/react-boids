@@ -6,7 +6,7 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
 
-const about: string = "Boids is an artificial life model, developed by Craig Reynolds in 1986, which simulates the flocking behaviour of birds. This flocking behavior emerges by moving each boid (bird-oid object) according to a few simple rules, which you can control below. This implementation of Boids was created with React.";
+const about: string = "Boids is an artificial life model, developed by Craig Reynolds in 1986, which simulates the flocking behaviour of birds. This flocking behavior emerges by moving each boid (bird-oid object) according to a few simple rules, which you can control below. This implementation of Boids was created with React; each boid is rendered as a component, and animated with CSS.";
 const learnMore: string = "https://en.wikipedia.org/wiki/Boids"
 
 function Explanation() {
